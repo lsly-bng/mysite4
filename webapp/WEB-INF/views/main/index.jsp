@@ -7,10 +7,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="/mysite4/assets/css/mysite.css" rel="stylesheet"
-	type="text/css">
-<link href="/mysite4/assets/css/main.css" rel="stylesheet"
-	type="text/css">
+<link href="${pageContext.request.contextPath}/assets/css/mysite.css"
+	rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath}/assets/css/main.css"
+	rel="stylesheet" type="text/css">
 
 </head>
 
@@ -28,7 +28,8 @@
 				<!-- content-head 없음 -->
 				<div id="index">
 
-					<img id="profile-img" src="/mysite4/assets/image/profile.jpg">
+					<img id="profile-img"
+						src="${pageContext.request.contextPath}/assets/image/profile.jpg">
 
 					<div id="greetings">
 						<p class="text-xlarge">
@@ -54,7 +55,6 @@
 
 		</div>
 		<!-- //container -->
-
 
 		<!-- footer -->
 		<c:import url="/WEB-INF/views/includes/footer.jsp"></c:import>
